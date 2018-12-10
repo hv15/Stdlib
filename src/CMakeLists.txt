@@ -407,7 +407,7 @@ FOREACH (name ${SAC_SRC})
             ${SAC2C} -v0 -linksetsize ${LINKSETSIZE} ${NOTREE_FLAG} -o ${DLL_BUILD_DIR} "${src}"
         WORKING_DIRECTORY
             "${dir}"
-        DEPENDS ${targets_list}
+        DEPENDS "${src}" ${targets_list}
         COMMENT "Building module `${dst}' for target `${TARGET}'")
 
     # Install compiled Tree/Mod parts of the compiled module
