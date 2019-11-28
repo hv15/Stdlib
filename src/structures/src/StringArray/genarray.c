@@ -16,6 +16,7 @@ void SAC_StringArray_genarray( SAC_ND_PARAM_out( resout_nt, array *),
   array *SAC_ND_A_FIELD( res_nt );
   int dim, size;
   int i;
+  int shp__cuda_pinned = 0; /* FIXME something strange is happening here */
 
   SAC_ND_ALLOC__DESC( res_nt, 0);
   SAC_ND_SET__RC( res_nt, 1);

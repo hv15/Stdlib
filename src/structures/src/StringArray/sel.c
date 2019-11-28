@@ -15,6 +15,7 @@ void SAC_StringArray_sel(  SAC_ND_PARAM_out( strout_nt, char *),
   int offset;
   SAC_ND_DECL__DESC( str_nt, );
   char *SAC_ND_A_FIELD( str_nt );
+  int idx__cuda_pinned = 0; /* FIXME something strange is happening here */
 
   offset = SAC_StringArray_index2offset( arr->dim,
                                          SAC_ND_A_FIELD(idx_nt),

@@ -17,6 +17,7 @@ void SAC_StringArray_modarray( SAC_ND_PARAM_out( arrout_nt, array *),
   int offset;
   SAC_ND_DECL__DESC( str_nt, );
   char *SAC_ND_A_FIELD( str_nt );
+  int idx__cuda_pinned = 0; /* FIXME something strange is happening here */
 
   if( SAC_ND_A_RC( arr_nt) > 1 ) {
     SAC_ND_DEC_RC( arr_nt, 1);
